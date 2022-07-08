@@ -8,12 +8,11 @@ const Search = ({ title, search, setSearch }) => {
       <FontAwesomeIcon icon="face-smile" /> */}
 
       <div className="search-top">
-        {/* <FontAwesomeIcon className="icon" icon="face-grin-hearts" /> */}
-        <p className="icon">👀🍀</p>
-
         <h1>{title}</h1>
         {/* <FontAwesomeIcon className="icon" icon="face-grin-hearts" /> */}
-        <p className="icon">🍀 👀</p>
+        <p className="icon">👀</p>
+
+        {/* <FontAwesomeIcon className="icon" icon="face-grin-hearts" /> */}
       </div>
       <input
         type="search"
