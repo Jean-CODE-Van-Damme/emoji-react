@@ -6,14 +6,13 @@ const Search = ({ title, search, setSearch }) => {
       {/* <FontAwesomeIcon icon="envelope" />
       <FontAwesomeIcon icon="key" />
       <FontAwesomeIcon icon="face-smile" /> */}
+      {/* <FontAwesomeIcon className="icon" icon="face-grin-hearts" /> */}
 
-      <div className="search-top">
-        <h1>{title}</h1>
-        {/* <FontAwesomeIcon className="icon" icon="face-grin-hearts" /> */}
-        <p className="icon">👀</p>
+      <h1>{title}</h1>
 
-        {/* <FontAwesomeIcon className="icon" icon="face-grin-hearts" /> */}
-      </div>
+      <p className="icon">👀</p>
+
+      <p className="icon">🎯</p>
       <input
         type="search"
         placeholder="What emoji are you looking for ?"
