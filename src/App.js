@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Search from "./components/Search";
+import Line from "./components/Line";
+import Footer from "./components/Footer";
+import { useState } from "react";
+import data from "./assets/emojiList.json";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faEnvelope,
+  faKey,
+  faListAlt,
+  faFaceSmile,
+  faFaceGrinHearts,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faEnvelope, faKey, faListAlt, faFaceSmile, faFaceGrinHearts);
 
 function App() {
+  const [search, setSearch] = useState("");
+  console.log(search);
+
+  const regex = new RegExp(search);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="search-div">
+        <Search title="EmojiSearch" search={search} setSearch={setSearch} />
+      </div>
+      <div className="line-div">
+        {data.map((element) => {
+          if (regex.test(element.keywords) === true) {
+            return <Line title={element.title} emoji={element.symbol} />;
+          }
+        })}
+      </div>
+      <Footer end="Made with React at Le Reacteur by Olivier" />;
+    </>
   );
 }
 

@@ -1,38 +1,69 @@
-.App {
+.search-div {
+  /* background-color: grey; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.search-top {
+  width: 40%;
+  height: 25%;
+  display: flex;
+  /* border: 2px red solid; */
+  justify-content: center;
+}
+
+.search-div input {
+  width: 50%;
+  height: 25%;
+  background-color: rgb(235, 212, 215);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon {
+  width: 20%;
+  /* border: 2px green solid; */
+  font-size: 3rem;
+  color: gold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 3rem;
+  margin: 0 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.line-div {
   display: flex;
   flex-direction: column;
+  /* border: 2px red solid; */
   align-items: center;
+}
+
+.line {
+  /* border: 2px blue solid; */
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 85%;
+  background-color: rgb(250, 247, 247);
+  border-radius: 5px;
+}
+
+.line:hover {
+  background-color: rgb(235, 212, 215);
+}
+
+.line p {
+  margin-right: 20px;
+}
+
+footer {
+  height: 100px;
+  /* background-color: gold; */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
