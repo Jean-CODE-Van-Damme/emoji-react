@@ -11,7 +11,6 @@ const Search = ({ title, search, setSearch }) => {
       <h1>{title}</h1>
 
       <p className="icon">👀</p>
-
       <p className="icon">🎯</p>
       <input
         type="search"
