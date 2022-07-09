@@ -5,15 +5,15 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 import data from "./assets/emojiList.json";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faEnvelope,
-  faKey,
-  faListAlt,
-  faFaceSmile,
-  faFaceGrinHearts,
-} from "@fortawesome/free-solid-svg-icons";
-library.add(faEnvelope, faKey, faListAlt, faFaceSmile, faFaceGrinHearts);
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import {
+//   faEnvelope,
+//   faKey,
+//   faListAlt,
+//   faFaceSmile,
+//   faFaceGrinHearts,
+// } from "@fortawesome/free-solid-svg-icons";
+// library.add(faEnvelope, faKey, faListAlt, faFaceSmile, faFaceGrinHearts);
 
 function App() {
   const [search, setSearch] = useState("");
