@@ -18,22 +18,22 @@ library.add(faEnvelope, faKey, faListAlt, faFaceSmile, faFaceGrinHearts);
 function App() {
   const [search, setSearch] = useState("");
 
-  console.log(search);
+  // console.log(search);
 
   const regex = new RegExp(search, "i");
 
   return (
     <>
-      <div className="search-div">
+      <section className="search-div">
         <Search title="EmojiSearch" search={search} setSearch={setSearch} />
-      </div>
-      <div className="line-div">
+      </section>
+      <section className="line-div">
         {data.map((element) => {
           if (regex.test(element.keywords) === true) {
             return <Line title={element.title} emoji={element.symbol} />;
           }
         })}
-      </div>
+      </section>
       <Footer end="Made with React at Le Reacteur by Olivier" />;
     </>
   );
