@@ -17,6 +17,7 @@ library.add(faEnvelope, faKey, faListAlt, faFaceSmile, faFaceGrinHearts);
 
 function App() {
   const [search, setSearch] = useState("");
+
   console.log(search);
 
   const regex = new RegExp(search, "i");
