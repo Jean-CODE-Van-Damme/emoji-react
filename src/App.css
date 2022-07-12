@@ -1,5 +1,5 @@
 .search-div {
-  /* background-color: grey; */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,11 +15,11 @@
   width: 30%;
   font-size: 3rem;
   height: 20%;
-  /* border: 2px red solid; */
+  
 }
 
 .search-div input {
-  /* border: 2px blue solid; */
+
   width: 70%;
   height: 20%;
   background-color: rgb(235, 212, 215);
@@ -36,12 +36,11 @@ h1 {
 .line-div {
   display: flex;
   flex-direction: column;
-  /* border: 2px red solid; */
   align-items: center;
 }
 
 .line {
-  /* border: 2px blue solid; */
+
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -57,7 +56,6 @@ h1 {
 
 footer {
   height: 100px;
-  /* background-color: gold; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,19 +5,8 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 import data from "./assets/emojiList.json";
 
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import {
-//   faEnvelope,
-//   faKey,
-//   faListAlt,
-//   faFaceSmile,
-//   faFaceGrinHearts,
-// } from "@fortawesome/free-solid-svg-icons";
-// library.add(faEnvelope, faKey, faListAlt, faFaceSmile, faFaceGrinHearts);
-
 function App() {
   const [search, setSearch] = useState("");
-
   // console.log(search);
 
   const regex = new RegExp(search, "i");
@@ -28,9 +17,11 @@ function App() {
         <Search title="EmojiSearch" search={search} setSearch={setSearch} />
       </section>
       <section className="line-div">
-        {data.map((element) => {
+        {data.map((element, index) => {
           if (regex.test(element.keywords) === true) {
-            return <Line title={element.title} emoji={element.symbol} />;
+            return (
+              <Line title={element.title} emoji={element.symbol} key={index} />
+            );
           }
         })}
       </section>
